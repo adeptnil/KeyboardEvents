@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Space-Trip</title>
+</head>
+
+<body>
+    <div id="box"></div>
+    <div id="sun"></div>    
+    <script>
+
+            var boxtop = 200;
+            var boxleft = 200;
+            
+            'use strict';
+            
+            document.addEventListener("keydown", (event) => {
+              const keyName = event.key;
+              if (keyName=="ArrowDown"){
+                    boxtop+=10;
+                    }
+              document.getElementById("box").style.top = boxtop + "px";
+              if (keyName=="ArrowUp"){
+                    boxtop-=10;
+                    }
+              document.getElementById("box").style.top = boxtop + "px";
+
+
+              if (keyName=="ArrowLeft"){
+                    boxleft-=10;
+                    }
+              document.getElementById("box").style.left = boxleft + "px";
+              if (keyName=="ArrowRight"){
+                    boxleft+=10;
+                    }
+              document.getElementById("box").style.left = boxleft + "px";
+            });
+       
+    </script>   
+</body>
+</html>

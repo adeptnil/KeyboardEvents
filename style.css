@@ -1,0 +1,31 @@
+html { 
+    background: url(images/outer-space.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+#box {
+    width: 250px;
+    height: 125px; 
+    position: absolute;
+    background-size: cover;
+    background-image: url(images/a-ufo-pv.png);
+    left: 200px;
+    top: 200px;
+}
+
+#sun {
+    position: absolute;
+    left: 900px;
+    top: 100px;
+	width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-image: url(images/edwin_sun.png);
+	-moz-border-radius: 150px;
+	-webkit-border-radius: 150px;
+    border-radius: 150px;
+
+}
