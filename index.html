@@ -17,27 +17,28 @@
             'use strict';
             
             document.addEventListener("keydown", (event) => {
+
               const keyName = event.key;
+
               if (keyName=="ArrowDown"){
                     boxtop+=10;
                     }
-              document.getElementById("box").style.top = boxtop + "px";
               if (keyName=="ArrowUp"){
                     boxtop-=10;
                     }
               document.getElementById("box").style.top = boxtop + "px";
 
 
+
               if (keyName=="ArrowLeft"){
                     boxleft-=10;
                     }
-              document.getElementById("box").style.left = boxleft + "px";
               if (keyName=="ArrowRight"){
                     boxleft+=10;
                     }
               document.getElementById("box").style.left = boxleft + "px";
             });
-       
+
     </script>   
 </body>
 </html>
